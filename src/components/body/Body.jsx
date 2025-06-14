@@ -10,10 +10,12 @@ import { Link } from "react-router-dom";
 
 const Body = () => {
   const [reslist, setReslist] = useState(null);
+  const [isLoading, setIsLoading] = useState(true);
 
   const dispatch = useDispatch();
 
   const fetchData = async () => {
+    setIsLoading(true);
     const resdata = await fetch(
       "https://raw.githubusercontent.com/Dishakatiyar1/json-data/refs/heads/main/ALL_RESTAURANTS_DATA"
     );
@@ -22,11 +24,16 @@ const Body = () => {
     setReslist(resjson?.data?.cards[2]?.data?.data?.cards);
 
     dispatch(setRestaurant(resjson?.data?.cards[2]?.data?.data?.cards));
+    setIsLoading(false);
   };
 
   useEffect(() => {
     fetchData();
   }, []);
+
+  if (isLoading) {
+    return <RescardSkelton />;
+  }
 
   return reslist?.length === 0 ? (
     <RescardSkelton />
