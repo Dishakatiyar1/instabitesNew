@@ -1,0 +1,11 @@
+{
+  "routes": [
+    {"src": "/node_modules/.*", "dest": "/node_modules/:path*", "status": 404},
+    {
+      "src": "/.parcel-cache/.*",
+      "dest": "/.parcel-cache/:path*",
+      "status": 404
+    },
+    {"src": "/[^.]+", "dest": "/", "status": 200}
+  ]
+}

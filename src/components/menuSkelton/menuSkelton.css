@@ -1,0 +1,19 @@
+.resmenu-container {
+  max-width: 1032px;
+  width: 100%;
+  margin: auto;
+  padding: 0 16px;
+}
+.res-menu-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 0;
+  border-bottom: 1px dashed var(--light-gray);
+}
+.res-header-left {
+  width: 50%;
+}
+.res-menu-container {
+  padding: 40px 0;
+}

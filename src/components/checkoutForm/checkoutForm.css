@@ -1,0 +1,25 @@
+.payment-form {
+  width: 100%;
+  max-width: 600px;
+  height: 100vh;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.payment-submit-btn {
+  margin: 10px 0 0 0;
+  padding: 8px 10px;
+  border-radius: 6px;
+  background-color: var(--yellow-color);
+  outline: none;
+  border: none;
+  width: 300px;
+  cursor: pointer;
+  color: var(--white-color);
+  transition: all 300ms;
+}
+.payment-submit-btn:hover {
+  background-color: var(--dark-yellow-color);
+}

@@ -1,0 +1,21 @@
+.admin-table {
+  width: 100%;
+}
+.admin-th {
+  width: 25%;
+  padding: 6px;
+  border: 1px solid var(--gray-border-color);
+}
+.admin-td {
+  padding: 10px;
+  text-align: center;
+  border-bottom: 1px solid var(--gray-border-color);
+}
+.delete-user {
+  color: var(--red-color);
+  cursor: pointer;
+}
+.datanot-found {
+  display: block;
+  text-align: center;
+}

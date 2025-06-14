@@ -1,0 +1,47 @@
+:root {
+  --yellow-color: #923800;
+  --dark-yellow-color: #ae560d;
+  --white-color: #ffffff;
+  --light-gray: #686b78;
+  --dark-color: #000000;
+  --facebook-icon: #4267b2;
+  --twitter-icon: #00acee;
+  --linkdln-icon: #0a66c2;
+  --instagram-icon: #e4405f;
+  --green-color: green;
+  --red-color: red;
+  --gray-border-color: rgb(221, 221, 221);
+  --dark-white: #f1f1f6;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "DM Sans", sans-serif;
+}
+
+.container {
+  max-width: 1280px;
+  width: 100%;
+  margin: auto;
+  padding: 0 15px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.seprator {
+  padding: 110px 0 30px 0;
+  flex: 1 1 0;
+}
+
+.main-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}

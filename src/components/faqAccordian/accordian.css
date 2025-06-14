@@ -1,0 +1,15 @@
+.ant-tabs-tab {
+  width: 150px;
+}
+.ant-tabs-tab-btn {
+  font-size: 18px;
+}
+.ant-tabs .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+  color: var(--yellow-color) !important;
+}
+.ant-tabs-tab:hover {
+  color: var(--yellow-color) !important;
+}
+.ant-tabs .ant-tabs-ink-bar {
+  background: var(--yellow-color) !important;
+}
