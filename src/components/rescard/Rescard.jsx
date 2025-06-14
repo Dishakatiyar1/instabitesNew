@@ -1,11 +1,11 @@
 import React from "react";
-import {Card} from "antd";
+import { Card } from "antd";
 import "./rescard.css";
-import {StarFilled} from "@ant-design/icons";
-import {BASE_IMG_URL} from "../../utils/constant";
-import {Link} from "react-router-dom";
+import { StarFilled } from "@ant-design/icons";
+import { BASE_IMG_URL } from "../../utils/constant";
+import { Link } from "react-router-dom";
 
-const Rescard = props => {
+const Rescard = (props) => {
   const {
     avgRating,
     cloudinaryImageId,
@@ -19,7 +19,7 @@ const Rescard = props => {
     <Link className="cardLink" to={`restaurant/${id}`}>
       <Card
         hoverable
-        style={{width: 300}}
+        style={{ width: 300 }}
         cover={
           <img
             alt="example"
