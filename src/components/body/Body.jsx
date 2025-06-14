@@ -20,7 +20,6 @@ const Body = () => {
       "https://raw.githubusercontent.com/Dishakatiyar1/json-data/refs/heads/main/ALL_RESTAURANTS_DATA"
     );
     const resjson = await resdata.json();
-    console.log("resjon", resjson);
     setReslist(resjson?.data?.cards[2]?.data?.data?.cards);
 
     dispatch(setRestaurant(resjson?.data?.cards[2]?.data?.data?.cards));

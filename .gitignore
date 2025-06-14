@@ -4,3 +4,4 @@
 /.cache
 /coverage
 .vercel
+package-lock.json
